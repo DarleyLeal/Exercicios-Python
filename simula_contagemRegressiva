@@ -1,0 +1,12 @@
+from time import sleep
+def contador():
+    print('       \033[1;33mCONTAGEM DE NÚMEROS\033[m')
+    i = int(input('Início da contagem: '))
+    f = int(input('Fim da contagem: '))
+    p = int(input('Passos: '))
+    print(f'\033[1;33mContagem iniciada em {i} finalizará em {f} com passos de {p} em {p}:\033[m')
+    for c in range(i, f + 1, p):
+        print(c, end=' ')
+        sleep(0.1)
+    print('\033[1;34m== Fim da contagem== \033[m', end=' ')
+
